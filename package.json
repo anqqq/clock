@@ -43,6 +43,7 @@
   "devDependencies": {
     "@types/node-sass": "^4.11.3",
     "node-sass": "^7.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "react-circular-progressbar": "^2.1.0"
   }
 }

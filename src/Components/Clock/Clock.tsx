@@ -31,7 +31,7 @@ export const Clock = () => {
         trailColor="#320001"
         pathColor="#fd0100"
       >
-        <div className="child_1" style={{ width: "370px", height: "370px" }}>
+        <div className="child_1">
           <Circle
             value={state.minutes}
             strokeWidth={12}
@@ -40,10 +40,7 @@ export const Clock = () => {
             trailColor="#053003"
             pathColor="#00ff00"
           >
-            <div
-              className="child_2"
-              style={{ width: "240px", height: "240px" }}
-            >
+            <div className="child_2">
               <Circle
                 value={state.seconds}
                 strokeWidth={18}

@@ -9,6 +9,8 @@ type CircleType = {
   trailColor: string;
   pathColor: string;
   value: number;
+  min: number;
+  max: number;
   strokeWidth: number;
   text?: string;
   children?: JSX.Element;
@@ -19,6 +21,8 @@ export const Circle = ({
   pathColor,
   trailColor,
   strokeWidth,
+  min,
+  max,
   value,
   text,
 }: CircleType) => {
@@ -27,6 +31,8 @@ export const Circle = ({
       value={value}
       text={text}
       strokeWidth={strokeWidth}
+      minValue={min}
+      maxValue={max}
       styles={buildStyles({
         trailColor: trailColor,
         pathColor: pathColor,
@@ -37,18 +43,3 @@ export const Circle = ({
     </CircularProgressbarWithChildren>
   );
 };
-
-/*{
-   <CircularProgressbar
-      value={60}
-      text={`18:30:10`}
-      strokeWidth={strokeWidth}
-      styles={buildStyles({
-        trailColor: "#00242c",
-        pathColor: "#05bbe2",
-        textSize: "18px",
-      })}
-    >
-      {children}
-    </CircularProgressbar> 
-}*/
